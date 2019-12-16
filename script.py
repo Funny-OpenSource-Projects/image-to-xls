@@ -12,7 +12,7 @@ oriimg = cv2.imread(filename)
 wb = openpyxl.Workbook() 
 sheet = wb.active 
 
-W = 1000
+W = 100
 height, width, depth = oriimg.shape
 imgScale = W/width
 

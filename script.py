@@ -1,46 +1,39 @@
-import cv2
 import re
 import openpyxl, os
 from openpyxl.styles import PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Color, Fill
+from PIL import Image 
 
-filename = 'monalisa.jpg'
-
-oriimg = cv2.imread(filename)
-
+im = Image.open(r"mario.jpg")  
 wb = openpyxl.Workbook() 
 sheet = wb.active 
 
-W = 100
-height, width, depth = oriimg.shape
-imgScale = W/width
+W = 50 
 
-newX,newY = oriimg.shape[1]*imgScale, oriimg.shape[0]*imgScale
-newimg = cv2.resize(oriimg,(int(newX),int(newY)))
+width, height   = im.size
+imgScale        = W/width
+newSize         = (int(width*imgScale), int(height*imgScale))
 
-rows, cols, _ = newimg.shape
+im=im.resize(newSize)
+cols, rows      = im.size
+print(cols, rows )
 
 for i in range(1, rows):
-    sheet.row_dimensions[i].height = 1
+    sheet.row_dimensions[i].height = 6
 for j in range(1, cols):
     column_letter = get_column_letter(j)
     sheet.column_dimensions[column_letter].width = 1
 
+rgb_im = im.convert('RGB')
+
 for i in range(1, rows):
-    
     for j in range(1, cols):
-        c = newimg[i, j] 
-
+        c = tuple(rgb_im.getpixel((j, i)))
         rgb2hex = lambda r,g,b: f"ff{r:02x}{g:02x}{b:02x}"
-
-        c = rgb2hex(c[0], c[1], c[2])
- 
-        #sheet.cell(row = i, column = j).value 
+        c = rgb2hex(*c)
+        sheet.cell(row = i, column = j).value = " "
         customFill = PatternFill(start_color=c, end_color=c, fill_type='solid')
         sheet.cell(row = i, column = j).fill = customFill
 
-wb.save('output.xlsx') 
-
-
-# PatternFill(bgColor='FFEE08', fill_type = 'solid')
+wb.save('output.xlsx')

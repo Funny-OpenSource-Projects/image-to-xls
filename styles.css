@@ -6,18 +6,30 @@
 }
 
 .centered h1 {
+    background: #4f4d4d;
     color: white;
+    padding: 10px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
 }
 
 .centered form {
     padding: 30px;
     background: white;
+    color: #5d5b5b;
     font-family: Arial, Helvetica, sans-serif;
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.55);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.55);
-    box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.55);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.75);
+
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
 }
 
 .centered form .control {
@@ -25,14 +37,35 @@
     justify-content: space-between;
     align-items: center;
     margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.centered form .control-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.centered form .control-center #file {
+    margin-left: 0px;
+    background-color: #106BA0;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
 }
 
 .centered form input {
     outline: none;
-    border: 1px solid #39c;
-    line-height: 18px;
-    padding: 5px; 
-    margin-left: 20px;
+    border: 1px solid #cecdce;
+    line-height: 25px;
+    padding: 5px;  
+    font-size: 14px;
+    color: #5d5b5b;  
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
 }
 
 #file {
@@ -45,18 +78,27 @@
 }
 
 #inputLabel {
-    background-color: #106BA0;
+    background-color: #c5595b;
     color: white;
     padding: 10px;
+    font-size: 14px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+}
+
+#submit {
+    background: #5eace4;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    text-decoration: none;
 }
 
 body {
-    background: rgba(73,155,234,1);
-    background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
-    background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-    background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-    background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-    background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+    background: #eb6a6c;
 }

@@ -1,0 +1,62 @@
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered h1 {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centered form {
+    padding: 30px;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.55);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.55);
+    box-shadow: 0px 0px 5px 0px rgba(138, 138, 138, 0.55);
+}
+
+.centered form .control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.centered form input {
+    outline: none;
+    border: 1px solid #39c;
+    line-height: 18px;
+    padding: 5px; 
+    margin-left: 20px;
+}
+
+#file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#inputLabel {
+    background-color: #106BA0;
+    color: white;
+    padding: 10px;
+}
+
+body {
+    background: rgba(73,155,234,1);
+    background: -moz-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
+    background: -webkit-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -o-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: -ms-linear-gradient(left, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    background: linear-gradient(to right, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
+}

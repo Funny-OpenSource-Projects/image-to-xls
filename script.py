@@ -4,6 +4,7 @@ from openpyxl.styles import PatternFill
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Color, Fill
 from PIL import Image 
+from io import StringIO
 
 im = Image.open(r"mario.jpg")  
 wb = openpyxl.Workbook() 
@@ -36,4 +37,6 @@ for i in range(1, rows):
         customFill = PatternFill(start_color=c, end_color=c, fill_type='solid')
         sheet.cell(row = i, column = j).fill = customFill
 
-wb.save('output.xlsx')
+
+out = StringIO()
+wb.save(out)

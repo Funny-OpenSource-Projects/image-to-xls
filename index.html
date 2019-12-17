@@ -1,5 +1,25 @@
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
     <body>
-        <h1>Hello world</h1>
+        
+        <div class="centered">
+            <h1>pix to xls</h1>
+            <form method="POST" action="/api" enctype="multipart/form-data"> 
+                <div class="control">  
+                        <label id="inputLabel" for="file">Upload Image</label>
+                        <input type="file" name="file" id="file">  
+                </div>
+                <div class="control">
+                    <label>Max columns:</label>
+                    <input type="text" name="cols" value="50"  maxlength="4"> 
+                </div>
+                <input type="hidden" name="filename">
+                <div class="control">
+                    <input type="submit" value="Build" name="submit"> 
+                </div>
+            </form>
+        </div>
     </body>
 </html>

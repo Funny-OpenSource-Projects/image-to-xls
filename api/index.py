@@ -26,7 +26,7 @@ class handler(BaseHTTPRequestHandler):
         wb = openpyxl.Workbook() 
         sheet = wb.active 
 
-        W = form.getvalue("cols")
+        W = int(form.getvalue("cols"))
 
         width, height   = im.size
         imgScale        = W/width

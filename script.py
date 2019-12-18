@@ -36,7 +36,3 @@ for i in range(1, rows):
         sheet.cell(row = i, column = j).value = " "
         customFill = PatternFill(start_color=c, end_color=c, fill_type='solid')
         sheet.cell(row = i, column = j).fill = customFill
-
-
-out = StringIO()
-wb.save(out)

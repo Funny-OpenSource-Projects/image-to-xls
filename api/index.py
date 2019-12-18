@@ -14,10 +14,6 @@ class handler(BaseHTTPRequestHandler):
 
     def do_POST(self):
 
-        # content_length = int(self.headers['Content-Length']) 
-        # c_type, p_dict = cgi.parse_header(self.headers.get('Content-Type'))
-
-
         form = cgi.FieldStorage(
             fp=self.rfile,
             headers=self.headers,
@@ -30,7 +26,7 @@ class handler(BaseHTTPRequestHandler):
         wb = openpyxl.Workbook() 
         sheet = wb.active 
 
-        W = 50 
+        W = form.getvalue("cols")
 
         width, height   = im.size
         imgScale        = W/width
@@ -66,7 +62,6 @@ class handler(BaseHTTPRequestHandler):
         self.send_header("Accept-Ranges", "bytes")
         self.send_header("Access-Control-Allow-Origin", "*")
         self.send_header("Content-Disposition", "attachment")
-        #self.send_header("Content-Length", len(message))
         self.send_header("Content-type", "application/vnd.ms-excel")
         self.end_headers()
         self.wfile.write(output)

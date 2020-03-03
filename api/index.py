@@ -61,7 +61,7 @@ class handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Accept-Ranges", "bytes")
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Content-Disposition", "attachment")
+        self.send_header("Content-Disposition", "attachment; filename=\"export.xls\"")
         self.send_header("Content-type", "application/vnd.ms-excel")
         self.end_headers()
         self.wfile.write(output)

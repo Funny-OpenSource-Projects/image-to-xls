@@ -8,6 +8,12 @@ A simple tool to make ascii art from an image using excel colored cells.
   <a href="https://pix-to-xls.now.sh/"> <img src="images/TryMe.png" width="100px"/></a>
 </p>
 
+![mario](images/screenshot-min.png)
+
+<hr />
+
+### Examples
+
 ![mario](images/monalisa-min.png)
 
 

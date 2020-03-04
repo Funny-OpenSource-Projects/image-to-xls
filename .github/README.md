@@ -3,7 +3,7 @@
 A simple tool to make ascii art from an image using excel colored cells.
 
 
-![mario](images/mario@2x-min.png)
+![mario](../images/mario@2x-min.png)
   
 ## How to use
 
@@ -11,7 +11,7 @@ A simple tool to make ascii art from an image using excel colored cells.
 
 Just go to https://pix-to-xls.now.sh/ 
 
-![mario](images/screenshot-min.png)
+![mario](../images/screenshot-min.png)
 
 ### As python package
 
@@ -47,7 +47,7 @@ pix-to-xls your_image.jpg your_output_file.xls
 
 ### Examples
 
-![mario](images/monalisa-min.png)
+![mario](../images/monalisa-min.png)
 
 
 

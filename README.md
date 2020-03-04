@@ -29,10 +29,9 @@ from pix_to_xls import builder
 builder.build("your_image.jpg", "your_output_file.xls", cols=50)
 ```
 
-### Cli
+### CLI
 
-
-We provide a cli interface for easiest way to use.
+We provide a CLI for an easiest way to use.
 
 Install Python package:
 
@@ -40,7 +39,7 @@ Install Python package:
 pip3 install pix-to-xls
 ```
 
-Use with `pix-to-xls` command
+And just run the `pix-to-xls` command
 
 ```bash
 pix-to-xls your_image.jpg your_output_file.xls

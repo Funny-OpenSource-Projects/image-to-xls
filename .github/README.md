@@ -9,7 +9,7 @@ A simple tool to convert an image to xls file using colored cells.
 
 ### Online
 
-Just go to https://pix-to-xls.now.sh/ 
+https://www.image2xls.com/
 
 ![mario](../images/screenshot-min.png)
 

@@ -18,7 +18,7 @@ https://www.image2xls.com/
 Install Python package:
 
 ```bash
-pip3 install pix-to_xls
+pip3 install pix_to_xls
 ```
 
 You can import this package too.

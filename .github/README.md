@@ -1,6 +1,6 @@
 # pix-to-xls
 
-A simple tool to convert an image to xls file using excel colored cells.
+A simple tool to convert an image to xls file using colored cells.
 
 
 ![mario](../images/mario@2x-min.png)

@@ -1,4 +1,4 @@
-# pix-to-xls
+# image2xls
 
 A simple tool to convert an image to xls file using colored cells.
 

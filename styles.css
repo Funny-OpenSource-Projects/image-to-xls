@@ -120,23 +120,15 @@ body {
     color: white;
     text-decoration: none;
   }
-  .fa {
+  img{
     position: fixed;
     text-align: center;  
     margin: 5px 2px;  
     font-size: 30px;
     bottom: 0;
     left: 700px;  
-    width: 50px;
-    border-radius: 50%;
+    width: 35px;
   }
-  
-  /* Add a hover effect if you want */
-  .fa:hover {
+  img:hover{
     opacity: 0.7;
   }
-  .fa-github {  
-    background: #eb6a6c;  
-    color: white;
-  }
-  

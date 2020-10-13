@@ -101,4 +101,34 @@
 
 body {
     background: #eb6a6c;
+
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 40;
+    width: 100%;
+    font-size: 30px;
+    background-color: #eb6a6c;
+    color: white;
+    text-align: center;
+  }
+  .footer:hover{
+    opacity: 0.7;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  img{
+    position: fixed;
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;
+    bottom: 0;
+    left: 700px;  
+    width: 35px;
+  }
+  img:hover{
+    opacity: 0.7;
+  }
